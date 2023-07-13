@@ -1,0 +1,70 @@
+.main{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        background-color: #f2f2f2;
+    }
+
+.FirstYear{
+    margin-top: 20px;
+    /* align-content: center; */
+}
+h1{
+    background-color: #003062;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width:100vw;
+    /* margin-left: 210px; */
+}
+
+.Class1 table{
+    margin-left: 210px;
+}
+
+td{
+    /* width: 85px;
+    Height: 85px; */
+    padding: 20px 20px 20px 20px;
+    color: #f2f2f2;
+    /* background-color: red; */
+}
+
+.Classroom{
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    /* margin: 20px 20px 20px 20px; */
+
+    display: block;
+}
+.Classroom:hover{
+    transform: scale(1.2);
+    transition-duration: 300ms;
+}
+.statusColor1{
+    background-color: green;
+}
+.statusColor2{
+    background-color: red;
+}
+.statusColor3{
+    background-color: #ff8c00;
+}
+.ClassLink{
+    font-size: 20px;
+    width: 48px;
+    text-decoration: none;
+    color: #f2f2f2;
+    display: block;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+.Status{
+    max-width: 65px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styleindex.css">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styleindex.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/map.css' %}"/>
+</head>
+
+<body>
+    <header class="head">
+        <div>
+            <img src="{% static 'images/ClgLogo.png'%}" alt="College Logo here" class="logo">
+        </div>
+        <div class="menu">
+            <ul class="ul">
+                <li class="li"><a href="{% url 'home' %}" class="navlink">Home</a></li>
+                <li class="li"><a href="{% url 'map' %}" class="navlink">Map</a></li>
+                <li class="li"><a href="{% url 'profile' %}" class="navlink">Profile</a></li>
+            </ul>
+        </div>
+        <div class="watch">
+            <h1 id="time" class="time"></h1>
+            <div class="DayDate">
+                <h2 id="day" class="day"></h2>
+                <h2 id="date" class="date"></h2>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        
+        <div class="FirstYear">
+            <h1>GROUND FLOOR</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="001" class="ClassLink">C001</a><span class="Status">{{1status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="002" class="ClassLink">C002</a><span class="Status">{{2status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="003" class="ClassLink">C003</a><span class="Status">{{3status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="004" class="ClassLink">C004</a><span class="Status">{{4status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="005" class="ClassLink">C005</a><span class="Status">{{5status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="006" class="ClassLink">C006</a><span class="Status">{{6status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="007" class="ClassLink">C007</a><span class="Status">{{7status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="008" class="ClassLink">C008</a><span class="Status">{{8status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="009" class="ClassLink">C009</a><span class="Status">{{9status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="010" class="ClassLink">C010</a><span class="Status">{{10status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="011" class="ClassLink">C011</a><span class="Status">{{11status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="012" class="ClassLink">C012</a><span class="Status">{{12status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="013" class="ClassLink">C013</a><span class="Status">{{13status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="014" class="ClassLink">C014</a><span class="Status">{{14status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="015" class="ClassLink">C015</a><span class="Status">{{15status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="016" class="ClassLink">C016</a><span class="Status">{{16status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="017" class="ClassLink">C017</a><span class="Status">{{17status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="017" class="ClassLink">C017</a><span class="Status">{{18status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="FirstYear">
+            <h1>Department of Engineering Sciences</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="101" class="ClassLink">C101</a><span class="Status">{{101status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="102" class="ClassLink">C102</a><span class="Status">{{102status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="103" class="ClassLink">C103</a><span class="Status">{{103status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="104" class="ClassLink">C104</a><span class="Status">{{104status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="105" class="ClassLink">C105</a><span class="Status">{{105status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="106" class="ClassLink">C106</a><span class="Status">{{106status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="107" class="ClassLink">C107</a><span class="Status">{{107status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="108" class="ClassLink">C108</a><span class="Status">{{108status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="109" class="ClassLink">C109</a><span class="Status">{{109status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="110" class="ClassLink">C110</a><span class="Status">{{110status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="111" class="ClassLink">C111</a><span class="Status">{{111status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="112" class="ClassLink">C112</a><span class="Status">{{112status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="113" class="ClassLink">C113</a><span class="Status">{{113status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="114" class="ClassLink">C114</a><span class="Status">{{114status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="115" class="ClassLink">C115</a><span class="Status">{{115status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="116" class="ClassLink">C116</a><span class="Status">{{116status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="117" class="ClassLink">C117</a><span class="Status">{{117status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="FirstYear">
+            <h1>Department of Electrical Engineering</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="201" class="ClassLink">C201</a><span class="Status">{{201status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="202" class="ClassLink">C202</a><span class="Status">{{202status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="203" class="ClassLink">C203</a><span class="Status">{{203status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="204" class="ClassLink">C204</a><span class="Status">{{204status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="205" class="ClassLink">C205</a><span class="Status">{{205status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="206" class="ClassLink">C206</a><span class="Status">{{206status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="207" class="ClassLink">C207</a><span class="Status">{{207status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="208" class="ClassLink">C208</a><span class="Status">{{208status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="209" class="ClassLink">C209</a><span class="Status">{{209status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="210" class="ClassLink">C210</a><span class="Status">{{210status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="211" class="ClassLink">C211</a><span class="Status">{{211status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="212" class="ClassLink">C212</a><span class="Status">{{212status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="213" class="ClassLink">C213</a><span class="Status">{{213status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="214" class="ClassLink">C214</a><span class="Status">{{214status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="215" class="ClassLink">C215</a><span class="Status">{{215status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="216" class="ClassLink">C216</a><span class="Status">{{216status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="217" class="ClassLink">C217</a><span class="Status">{{217status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="218" class="ClassLink">C218</a><span class="Status">{{218status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="FirstYear">
+            <h1>Department of Electronics and Telecommunication Engineering</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="301" class="ClassLink">C301</a><span class="Status">{{301status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="302" class="ClassLink">C302</a><span class="Status">{{302status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="303" class="ClassLink">C303</a><span class="Status">{{303status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="304" class="ClassLink">C304</a><span class="Status">{{304status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="305" class="ClassLink">C305</a><span class="Status">{{305status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="306" class="ClassLink">C306</a><span class="Status">{{306status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="307" class="ClassLink">C307</a><span class="Status">{{307status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="308" class="ClassLink">C308</a><span class="Status">{{308status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="309" class="ClassLink">C309</a><span class="Status">{{309status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="310" class="ClassLink">C310</a><span class="Status">{{310status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="311" class="ClassLink">C311</a><span class="Status">{{311status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="312" class="ClassLink">C312</a><span class="Status">{{312status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="313" class="ClassLink">C313</a><span class="Status">{{313status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="314" class="ClassLink">C314</a><span class="Status">{{314status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="315" class="ClassLink">C315</a><span class="Status">{{315status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="316" class="ClassLink">C316</a><span class="Status">{{316status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="FirstYear">
+            <h1>Department of Artificial Intelligence and Data Science Engineering</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="401" class="ClassLink">C401</a><span class="Status">{{401status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="402" class="ClassLink">C402</a><span class="Status">{{402status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="403" class="ClassLink">C403</a><span class="Status">{{403status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="404" class="ClassLink">C404</a><span class="Status">{{404status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="405" class="ClassLink">C405</a><span class="Status">{{405status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="406" class="ClassLink">C406</a><span class="Status">{{406status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="407" class="ClassLink">C407</a><span class="Status">{{407status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="408" class="ClassLink">C408</a><span class="Status">{{408status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="409" class="ClassLink">C409</a><span class="Status">{{409status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="410" class="ClassLink">C410</a><span class="Status">{{410status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="411" class="ClassLink">C411</a><span class="Status">{{411status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="412" class="ClassLink">C412</a><span class="Status">{{412status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="413" class="ClassLink">C413</a><span class="Status">{{413status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="FirstYear">
+            <h1>Department of Computer Engineering</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="501" class="ClassLink">C501</a><span class="Status">{{501status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="502" class="ClassLink">C502</a><span class="Status">{{502status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="503" class="ClassLink">C503</a><span class="Status">{{503status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="504" class="ClassLink">C504</a><span class="Status">{{504status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="505" class="ClassLink">C505</a><span class="Status">{{505status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="506" class="ClassLink">C506</a><span class="Status">{{506status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="507" class="ClassLink">C507</a><span class="Status">{{507status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="508" class="ClassLink">C508</a><span class="Status">{{508status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="509" class="ClassLink">C509</a><span class="Status">{{509status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="510" class="ClassLink">C510</a><span class="Status">{{510status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="511" class="ClassLink">C511</a><span class="Status">{{511status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="512" class="ClassLink">C512</a><span class="Status">{{512status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="513" class="ClassLink">C513</a><span class="Status">{{513status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="FirstYear">
+            <h1>Department of Information Technology </h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="601" class="ClassLink">C601</a><span class="Status">{{601status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="602" class="ClassLink">C602</a><span class="Status">{{602status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="603" class="ClassLink">C603</a><span class="Status">{{603status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="604" class="ClassLink">C604</a><span class="Status">{{604status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="605" class="ClassLink">C605</a><span class="Status">{{605status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="606" class="ClassLink">C606</a><span class="Status">{{606status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="607" class="ClassLink">C607</a><span class="Status">{{607status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="608" class="ClassLink">C608</a><span class="Status">{{608status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="609" class="ClassLink">C609</a><span class="Status">{{609status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="610" class="ClassLink">C610</a><span class="Status">{{610status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="611" class="ClassLink">C611</a><span class="Status">{{611status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        {% comment %} <div class="FirstYear">
+            <h1>Department of Instrumentation and Control Engineering</h1>
+
+            <div class="Class1">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="701" class="ClassLink">C701</a><span class="Status">{{701status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="702" class="ClassLink">C702</a><span class="Status">{{702status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="703" class="ClassLink">C703</a><span class="Status">{{703status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="704" class="ClassLink">C704</a><span class="Status">{{704status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="705" class="ClassLink">C705</a><span class="Status">{{705status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="706" class="ClassLink">C706</a><span class="Status">{{706status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="707" class="ClassLink">C707</a><span class="Status">{{707status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="708" class="ClassLink">C708</a><span class="Status">{{708status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="709" class="ClassLink">C709</a><span class="Status">{{709status}}</span>
+                            </div>
+                        </td>
+                    <tr>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="710" class="ClassLink">C710</a><span class="Status">{{710status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="711" class="ClassLink">C711</a><span class="Status">{{711status}}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Classroom ">
+                                <a href="712" class="ClassLink">C712</a><span class="Status">{{712status}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> {% endcomment %}
+
+
+    </div>
+
+    <script src="{% static 'js/map.js'%}"></script>
+    <script src="{% static 'js/index.js'%}"></script>
+</body>
+
+</html>

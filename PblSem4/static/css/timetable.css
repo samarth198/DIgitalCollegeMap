@@ -1,0 +1,26 @@
+.thh{
+    /* height: 30px; */
+    height: 100px;
+    width: 30px;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    background-color:  #f2f2f2;
+}
+.tdd{
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    color: #003062;
+    font-size: 20px;    
+    text-align: center;
+    text-justify: center;
+    background-color:  #f2f2f2;
+}
+.info{
+    text-decoration: none;
+    margin: 15px 10px;
+    border: 1px solid #003062;
+    background-color:  #ffffff;
+    color: red;
+}

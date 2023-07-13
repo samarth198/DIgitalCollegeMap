@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: burlywood; */
+}
+.main{
+    background-color: bisque;
+}
+.navbar{
+    background-color: skyblue;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 280px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu{
+    width: 400px;
+    height: 70px;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+ul li{
+    margin: 10px;
+}
+ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.search{
+    width: 250px;
+    height: 70px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+.inp{
+    font-weight: 500;
+    font-size: 15px;
+    width: 170px;
+    height: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.btn{
+    width: auto;
+    height: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.content{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 645px;
+    align-items: center;
+    display: flex;
+}
+.LoginBox{
+    background-color: white;
+    border-radius: 20px;
+    border: 10px  skyblue;
+    lighting-color: black;
+    border-style: groove;
+    margin-left: auto;
+    height: 400px;
+    width: 300px;
+    margin-right: 200px;
+}
+
+.head
+{
+    width:100px;
+    height: 40px;
+    padding: 20px 100px 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IdPass{
+    height: 70px;
+    width: 260px;
+    /* margin-left: 20px; */
+    margin: 10px 20px 10px 20px;
+}
+
+h3{
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    align-items:end;
+}
+input{
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+}
+.LoginBtn{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: skyblue;
+    border: none;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.reset{
+    width: 115px;
+    margin: 10px 73px 10px 72px;
+}
+.SignUp{
+    width: fit-content;
+    margin: 10px 25px 10px 25px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
